@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #1e293b; /* Slate 800 - Calm Navy */
+  --color-brand-secondary: #3b82f6; /* Blue 500 - Trustworthy blue */
+  --color-brand-accent: #64748b; /* Slate 500 - Muted secondary */
+  --color-brand-surface: #f8fafc; /* Very light slate backdrop */
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-surface text-slate-900 antialiased;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
